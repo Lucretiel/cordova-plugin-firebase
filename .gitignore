@@ -6,3 +6,6 @@
 .build-browser
 package-lock.json
 node_modules
+
+# Sublime
+*.sublime-workspace

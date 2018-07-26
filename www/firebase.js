@@ -1,4 +1,16 @@
-var exec = require('cordova/exec');
+const exec = require('cordova/exec');
+
+const execPromise = (service, action, args) => new Promise((resolve, reject) =>
+    exec(
+        success => resolve(success),
+        fail => reject(fail),
+        service,
+        action,
+        args,
+    );
+})
+
+const execFirebase = (action, args) => execPromise("FirebasePlugin", action, args);
 
 exports.getVerificationID = function (number, success, error) {
     exec(success, error, "FirebasePlugin", "getVerificationID", [number]);
