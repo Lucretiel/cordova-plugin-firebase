@@ -65,7 +65,6 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<framework src="com.google.firebase:firebase-crash:+" />
 		<framework src="com.google.firebase:firebase-config:+" />
 		<framework src="com.google.firebase:firebase-perf:+" />
-
 	</platform>
 
 	<platform name="ios">
@@ -94,23 +93,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
 		<header-file src="src/ios/Firebase/Firebase.h" />
 
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseAnalytics.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCore.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseInstanceID.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseNanoPB.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleToolboxForMac.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/nanopb.framework" />
-		<framework custom="true" src="src/ios/Firebase/Messaging/Protobuf.framework" />
-		<framework custom="true" src="src/ios/Firebase/Messaging/FirebaseMessaging.framework" />
-		<framework custom="true" src="src/ios/Firebase/Crash/FirebaseCrash.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/FirebaseAuth.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/GTMSessionFetcher.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/FirebaseISASwizzler.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/FirebaseMethodSwizzler.framework" />
+		<framework type="podspec" src="Firebase/Core">
 	</platform>
 
 	<platform name="browser">
